@@ -1,4 +1,4 @@
-module.exports = (app) => {
-  const { home } = app.controllers.home;
+module.exports = function(app) {
+  let home = app.controllers.home;
   app.get('/', home.index);
-};
+}
