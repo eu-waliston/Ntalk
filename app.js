@@ -13,11 +13,12 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true }
+    cookie: {secure: true}
 }))
 
-app.use(express.json());
-app.use(express.urlencoded())
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
 app.use(express.static(__dirname + '/public'));
 
 //app.get('/', routes.index);
