@@ -1,17 +1,14 @@
 <% include ../header.ejs %>
 <header>
-    <h1>Ntalk</h1>
-    <h4>Bem-vindo!</h4>
+    <h2>
+        Ntalk - agenda de contatos
+    </h2>
 </header>
 
 <section>
-    <form action="/entrar" method="post">
-        <input type="text" name="name" placeholder="Seu nome">
-        <br>
-        <input type="text" name="email" placeholder="Seu email">
-        <br>
-        <button type="submit">Entrar</button>
-    </form>
+    <p>
+        Bem-vindo <%- usuario.nome %>
+    </p>
 </section>
-
+<% include ../exit%>
 <% include ../footer.ejs %>
