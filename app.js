@@ -1,4 +1,7 @@
-let express = require('express'), load = require('express-load'), app = express();
+let express = require('express')
+let load = require('express-load')
+
+app = express();
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
